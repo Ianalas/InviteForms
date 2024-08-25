@@ -1,0 +1,32 @@
+.inforesp{
+  
+  & p{
+    font: 400 14px/140% var(--fonte);
+    color: #78716C;
+    margin-top: 4px;
+    font-style: italic;
+  }
+  
+  & input:invalid {
+    border-width: 2px;
+    border-color: var(--semantic-error);
+  }
+  input + span{
+    display: inline-block;
+    margin-top: .25rem;
+  }
+
+  input:required + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    margin-top: .25rem;
+    color: var(--semantic-error);
+    font: 400 14px/140% var(--fonte);
+  }
+
+  input:valid + .error{
+    display: none;
+  }
+
+}

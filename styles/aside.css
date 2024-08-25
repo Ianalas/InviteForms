@@ -1,0 +1,19 @@
+aside{
+  width: 25rem;
+  height: 728px;
+  background: url(../assets/Background.png) no-repeat center center;
+  padding: 2rem;
+  background-size: cover;
+  & img{
+    height: 3rem;
+  }
+  & h1{
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+  }
+  & p{
+    font: var(--body-md);
+    font-weight: lighter;
+    color: var(--text-heading);
+  }
+}

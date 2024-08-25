@@ -1,0 +1,10 @@
+@import url(global.css);
+@import url(utils.css);
+@import url(aside.css);
+@import url(section.css);
+@import url(./resp/index.css);
+@import url(./ops/colores.css);
+@import url(./ops/event.css);
+@import url(./ops/switch.css);
+@import url(./contact.css);
+@import url(./policies.css);

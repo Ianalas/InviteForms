@@ -1,0 +1,9 @@
+#contactData{
+  display: grid;
+  margin-top: 3rem;
+  gap: .5rem;
+
+  & label{
+    margin-top: 1.5rem;
+  }
+}

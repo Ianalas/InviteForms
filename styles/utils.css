@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.borderCircle{
+  border-radius: 12px;
+}
+
+.gap-20{
+  gap: 1.25rem;
+}
+
+.gray-placeholder{
+  color: var(--input-placeholder);
+}
+
+.col-2{
+  grid-column: 1 / span 2;
+}
+.grid{
+  display: grid;
+}
+
+.line{
+  background-color: var(--input-stroke);
+  height: 1px;
+  width: 100%;
+  margin-block: 3rem;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Formulário Convite</title>
+</head>
+<body class="container gap-20">
+  <aside class="borderCircle">
+    <img src="./assets/Logo.svg" alt="">
+    <h1>Festive</h1>
+    <p>Crie um convite digital para o seu evento</p>
+  </aside>
+  <main class="borderCircle">
+    <h2>Crie seu convite</h2>
+    <section>
+      <form>
+        <fieldset id="aboutEvent">
+          <legend><i data-lucide="calendar" class="gray-placeholder"></i>Sobre o evento</legend>
+
+          <label for="name_event" class="col-2">Título</label>
+          <input name="name_event"  class="col-2" type="text" placeholder="Nome do evento">
+          
+          <label for="name_event">Início</label>
+          <label for="name_event">Fim</label>
+          <input name="name_event" type="text" placeholder="DD/MM/AAAA, --:--">
+          <input name="name_event" type="datetime" placeholder="DD/MM/AAAA, --:--">
+
+          <label for="typeModel">Tipo</label>
+          <label for="local">Local</label>
+          <div id="typeModel">
+            <input name="typeModel" type="checkbox">
+            <span><i data-lucide="building-2"></i> <strong>Presencial</strong></span>
+            <span><i data-lucide="video"></i> <strong>Online</strong></span>
+          </div>
+          <input name="local" type="text" placeholder="Link ou endereço">
+          <label for="description">Descrição</label>
+          <textarea class="col-2" name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </fieldset>
+        <fieldset id="personalize">
+          <legend><i data-lucide="paintbrush-vertical" class="gray-placeholder"></i>Personalização</legend>
+
+          <label>Cor principal</label>
+          <div class="colores">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          <input type="radio" name="color" id="color">
+          </div>
+
+          <label>Tema do evento</label>
+          <section class="event">
+              <div>
+                <input type="radio" name="evento" id="birthday" required>
+                <span></span>
+                <label for="birthday">Aniversário</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="infant" required>
+                <span></span>
+                <label for="infant">Infantil</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="format" required>
+                <span></span>
+                <label for="format">Formatura</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="marriage" required>
+                <span></span>
+                <label for="marriage">Casamento</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="babytea" required>
+                <span></span>
+                <label for="babytea">Chá de bebê</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="foodtea" required>
+                <span></span>
+                <label for="foodtea">Chá de panela</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="carnaval" required>
+                <span></span>
+                <label for="carnaval">Carnaval</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="easter" required>
+                <span></span>
+                <label for="easter">Páscoa</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="StJoao" required>
+                <span></span>
+                <label for="Stjoao">São João</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="halloween" required>
+                <span></span>
+                <label for="halloween">Halloween</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="christmas" required>
+                <span></span>
+                <label for="christmas">Natal</label>
+              </div>
+              <div>
+                <input type="radio" name="evento" id="other" required>
+                <span></span>
+                <label for="other">Outro</label>
+              </div>
+          </section>
+            <div class="grid">
+              <label for="">Estilo</label>
+              <label for="dropzone">Foto de capa</label>
+              <div class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <label for="toggleSwitch"></label>
+              </div>
+              <div class="file">
+                <input type="file" name="dropzone" id="dropzone" accept="image/*">
+                <span> <i data-lucide="upload"></i> <strong>Selecionar</strong></span>
+              </div>
+            </div>
+        </fieldset>
+        <fieldset id="contactData">
+          <legend><i data-lucide="contact" class="gray-placeholder"></i>Dados para contato</legend>
+
+          <label for="name" class="col-2">Nome</label>
+          <input name="name"  class="col-2" type="text" placeholder="Nome completo">
+
+          <label for="">E-mail</label>
+          <label for="">Telefone</label>
+          <input name="name"  type="text" placeholder="exemplo@mail.com">
+          <input name="name"  type="text" placeholder="(99) 91234-5678">
+        </fieldset>
+        <div class="line"></div>
+        <section class="policies">
+          <div>
+            <i data-lucide="check"></i>
+            <input type="checkbox" name="direito" id="direito" required>
+            <p>Li e concordo com os <i>Termos e Condições</i> e com a <i>Política de Privacidade</i></p>
+          </div>
+          <div>
+            <i data-lucide="check"></i>
+            <input type="checkbox" name="direito" id="direito" required>
+            <p>Aceito receber atualizações e promoções por E-mail</p>
+          </div>
+          <div>
+            <i data-lucide="check"></i>
+            <input type="checkbox" name="direito" id="direito" required>
+            <p>Aceito receber atualizações e promoções por SMS</p>
+          </div>
+        </section>
+        <button type="submit"><i data-lucide="ticket"></i> Gerar convite</button>
+      </form>
+    </section>
+  </main>
+</body>
+  <!--lucide icons-->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</html>
+
+
+<!--
+  <i data-lucide="circle-alert"></i>
+-->

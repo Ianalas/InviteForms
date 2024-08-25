@@ -1,0 +1,65 @@
+.colores{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  & input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--shape-button);
+  }
+  & input[type="radio"]::after {
+    position: absolute;
+    content: "";
+    padding: 0;
+    height: 1.75rem;
+    width: 1.75rem;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    border-radius: 50%;
+  }
+  & input[type="radio"]:checked, input[type="radio"]:focus {
+    outline: none;
+  }
+
+  & input[type="radio"]:nth-child(1)::after {
+    background-color: var(--brand-light);
+  }
+  & input[type="radio"]:nth-child(2)::after {
+    background-color: var(--navy);
+  }
+  & input[type="radio"]:nth-child(3)::after {
+    background-color: var(--purple);
+  }
+  & input[type="radio"]:nth-child(4)::after {
+    background-color: var(--fuschia);
+  }
+  & input[type="radio"]:nth-child(5)::after {
+    background-color: var(--pink);
+  }
+  & input[type="radio"]:nth-child(6)::after {
+    background-color: var(--danger);
+  }
+  & input[type="radio"]:nth-child(7)::after {
+    background-color: var(--orange);
+  }
+  & input[type="radio"]:nth-child(8)::after {
+    background-color: var(--yellow);
+  }
+  & input[type="radio"]:nth-child(9)::after {
+    background-color: var(--lime);
+  }
+  & input[type="radio"]:nth-child(10)::after {
+    background-color: var(--green);
+  }
+  & input[type="radio"]:nth-child(11)::after {
+    background-color: var(--cyan);
+  }
+}

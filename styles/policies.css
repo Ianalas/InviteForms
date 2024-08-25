@@ -1,0 +1,59 @@
+.policies{
+  display: grid;
+  gap: 4px;
+  & div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: .75rem;
+
+    & svg{
+      position: absolute;
+      display: none;
+      width: 20px;
+      height: 20px;
+    }
+    & p{
+      color: var(--text-body);
+      font: var(--body-sm);
+      font-weight: 400;
+      & i{
+        color: var(--brand-light);
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+    & input{
+      position: absolute;
+      opacity: 0;
+      inset: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    &::before{
+      content: "";
+      border-radius: .25rem;
+      border: 1px solid var(--input-stroke);
+
+      width: 20px;
+      height: 20px;
+      background-color: var(--input-base);
+    }
+  }
+
+  & div:has(:checked){
+    & svg{
+      left: 1px;
+      display: flex;
+      align-self: center;
+      
+      color: var(--brand-light);
+    }
+    &::before{
+      border: 1px solid var(--brand-light);
+    }
+  }
+
+
+}

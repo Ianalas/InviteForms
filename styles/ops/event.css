@@ -1,0 +1,41 @@
+.event{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+  align-items: end;
+  
+  & div{
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    padding: .25rem;
+    height: 105px;
+    width: 134px;
+    background-color: var(--shape-button);
+
+    position: relative;
+    & input{
+      position: absolute;
+      opacity: 0;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    & span{
+      height: 4rem;
+      width: 126px;
+
+      background-color: var(--shape-hover);
+      border-radius: .5rem;
+    }
+    & label{
+      margin: 0;
+      bottom: 0;
+    }
+  }
+
+  div:has(:checked), div:focus-within, div:hover{
+    &{
+      border: 2px solid var(--brand-light);
+    }
+  }
+}
